@@ -1,0 +1,808 @@
+[
+  { "fullname": "CS 2805" },
+  { "fullname": "CS 2804" },
+  {
+    "fullname": "CS 3101",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1371"]
+    }
+  },
+  { "fullname": "CS 2803" },
+  { "fullname": "CS 2701R" },
+  {
+    "fullname": "CS 2600",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1371"]
+    }
+  },
+  {
+    "fullname": "CS 2345",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2340", "(   (", "CS 2110", "CS 2261"]
+    }
+  },
+  { "fullname": "CS 1100" },
+  { "fullname": "CS 2802" },
+  {
+    "fullname": "CS 3210",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  { "fullname": "CS 4853" },
+  { "fullname": "CS 4816" },
+  { "fullname": "CS 4902" },
+  { "fullname": "CS 4805" },
+  { "fullname": "CS 4804" },
+  { "fullname": "CS 4851" },
+  { "fullname": "CS 4802" },
+  { "fullname": "CS 4801" },
+  {
+    "fullname": "CS 4795",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["ECE 2035", "ECE 2036", "CS 2110", "CS 2261"]
+    }
+  },
+  {
+    "fullname": "CS 4793",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 3790", "PST 3790", "PSYC 3790", "ISYE 3790"]
+    }
+  },
+  { "fullname": "CS 4792" },
+  {
+    "fullname": "CS 4770",
+    "prerequisites": { "type": "and", "courses": ["CS 2340", "LCC 2700"] }
+  },
+  { "fullname": "CS 4854" },
+  { "fullname": "CS 4791" },
+  { "fullname": "CS 4745" },
+  { "fullname": "CS 4741" },
+  { "fullname": "CS 4752" },
+  { "fullname": "CS 4863" },
+  { "fullname": "CS 4901" },
+  { "fullname": "CS 4726" },
+  { "fullname": "CS 4980" },
+  { "fullname": "CS 4710" },
+  {
+    "fullname": "CS 4690",
+    "prerequisites": { "type": "or", "courses": ["CS 3750", "PSYC 3750"] }
+  },
+  { "fullname": "CS 4803" },
+  {
+    "fullname": "CS 4685",
+    "prerequisites": { "type": "and", "courses": ["CS 2200"] }
+  },
+  { "fullname": "CS 4903" },
+  {
+    "fullname": "CS 4670",
+    "prerequisites": { "type": "and", "courses": ["CS 4660"] }
+  },
+  {
+    "fullname": "CS 4665",
+    "prerequisites": { "type": "and", "courses": ["CS 4660"] }
+  },
+  {
+    "fullname": "CS 4742",
+    "prerequisites": { "type": "and", "courses": ["CS 4741"] }
+  },
+  {
+    "fullname": "CS 4649",
+    "prerequisites": { "type": "and", "courses": ["CS 1332"] }
+  },
+  {
+    "fullname": "CS 4731",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  {
+    "fullname": "CS 4646",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  { "fullname": "CS 4725" },
+  {
+    "fullname": "CS 4635",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  {
+    "fullname": "CS 4632",
+    "prerequisites": { "type": "and", "courses": ["CS 3630"] }
+  },
+  {
+    "fullname": "CS 4625",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  {
+    "fullname": "CS 4723",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 2340",
+        {
+          "type": "or",
+          "courses": [
+            "CS 3001",
+            "CS 4001",
+            "CS 4002",
+            "CS 4003",
+            "CS 4726",
+            "SLS 3110"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4615",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  {
+    "fullname": "CS 4622",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  {
+    "fullname": "CS 4616",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  { "fullname": "CS 4660", "prerequisites": { "type": "and", "courses": [] } },
+  {
+    "fullname": "CS 6727",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 6035",
+        { "type": "or", "courses": ["PUBP 6725", "CS 6725"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4675",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  {
+    "fullname": "CS 4613",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  { "fullname": "CS 4698" },
+  {
+    "fullname": "CS 4611",
+    "prerequisites": { "type": "and", "courses": ["CS 3600"] }
+  },
+  {
+    "fullname": "CS 4560",
+    "prerequisites": { "type": "and", "courses": ["CS 1050", "CS 3510"] }
+  },
+  {
+    "fullname": "CS 4650",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 3510", "CS 3511"] },
+        {
+          "type": "or",
+          "courses": [
+            "MATH 2550",
+            "MATH 2551",
+            "MATH 2561",
+            "MATH 2401",
+            "MATH 24X1",
+            "MATH 2X51"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4550",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  {
+    "fullname": "CS 4641",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 1332", "ISYE 3133"] },
+        {
+          "type": "or",
+          "courses": [
+            "MATH 1553",
+            "MATH 1X53",
+            "MATH 1554",
+            "MATH 1X54",
+            "MATH 1564"
+          ]
+        },
+        { "type": "or", "courses": ["MATH 1551", "MATH 1X51"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4530",
+    "prerequisites": { "type": "and", "courses": ["CS 4540"] }
+  },
+  {
+    "fullname": "CS 4497",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  {
+    "fullname": "CS 4495",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        {
+          "type": "or",
+          "courses": ["MATH 2605", "MATH 2401", "MATH 24X1", "MATH 2411"]
+        },
+        { "type": "or", "courses": ["CS 2110", "CS 2261"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4496",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  {
+    "fullname": "CS 4488",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 1332",
+        { "type": "or", "courses": ["CS 2110", "CS 2261"] },
+        "CS 2340"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4644",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        {
+          "type": "or",
+          "courses": [
+            "MATH 2605",
+            "MATH 2401",
+            "MATH 24X1",
+            "MATH 2411",
+            "MATH 2550",
+            "MATH 2551",
+            "MATH 2561",
+            "MATH 2X51"
+          ]
+        },
+        { "type": "or", "courses": ["CS 2110", "CS 2261"] },
+        { "type": "or", "courses": ["CS 3510", "CS 3511"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4480",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  { "fullname": "CS 4590" },
+  {
+    "fullname": "CS 4520",
+    "prerequisites": { "type": "and", "courses": ["CS 4540"] }
+  },
+  { "fullname": "CS 4472" },
+  {
+    "fullname": "CS 4475",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1371"]
+    }
+  },
+  {
+    "fullname": "CS 4605",
+    "prerequisites": {
+      "type": "or",
+      "courses": [
+        "CS 2110",
+        "CS 2261",
+        { "type": "and", "courses": ["ECE 2020", "ECE 2035"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4464",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  { "fullname": "CS 4699" },
+  { "fullname": "CS 4452" },
+  {
+    "fullname": "CS 4432",
+    "prerequisites": { "type": "and", "courses": ["CS 3300", "CS 4400"] }
+  },
+  {
+    "fullname": "CS 4420",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 1332",
+        { "type": "or", "courses": ["CS 2200", "ECE 3057", "ECE 3058"] },
+        "CS 4400"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4540",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 3510", "CS 3511"] },
+        { "type": "or", "courses": ["MATH 3012", "MATH 3022"] },
+        {
+          "type": "or",
+          "courses": [
+            "MATH 3215",
+            "MATH 3235",
+            "MATH 3225",
+            "MATH 3770",
+            "MATH 3670",
+            "CEE 3770",
+            "ISYE 3770",
+            {
+              "type": "and",
+              "courses": [
+                "ISYE 2027",
+                { "type": "or", "courses": ["ISYE 2028", "ISYE 3030"] },
+                ")   )"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4423",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 1332",
+        { "type": "or", "courses": ["CS 2200", "ECE 3058"] },
+        "CS 4400"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4510",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 3510", "CS 3511"] },
+        { "type": "or", "courses": ["MATH 3012", "MATH 3022"] },
+        {
+          "type": "or",
+          "courses": [
+            "MATH 3215",
+            "MATH 3235",
+            "MATH 3225",
+            "MATH 3770",
+            "MATH 3670",
+            "CEE 3770",
+            "ISYE 3770",
+            {
+              "type": "and",
+              "courses": [
+                "ISYE 2027",
+                { "type": "or", "courses": ["ISYE 2028", "ISYE 3030"] },
+                ")   )"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4330",
+    "prerequisites": { "type": "and", "courses": ["CS 3300"] }
+  },
+  {
+    "fullname": "CS 4392",
+    "prerequisites": { "type": "and", "courses": ["CS 2340"] }
+  },
+  {
+    "fullname": "CS 4342",
+    "prerequisites": { "type": "and", "courses": ["CS 3300"] }
+  },
+  {
+    "fullname": "CS 4320",
+    "prerequisites": { "type": "and", "courses": ["CS 3300"] }
+  },
+  { "fullname": "CS 4280" },
+  {
+    "fullname": "CS 4270",
+    "prerequisites": { "type": "and", "courses": ["CS 3251"] }
+  },
+  {
+    "fullname": "CS 4470",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 2340",
+        { "type": "or", "courses": ["CS 3750", "PSYC 3750"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4460",
+    "prerequisites": { "type": "and", "courses": ["CS 1332"] }
+  },
+  {
+    "fullname": "CS 4455",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  {
+    "fullname": "CS 4255",
+    "prerequisites": { "type": "and", "courses": ["CS 3251"] }
+  },
+  { "fullname": "CS 4460R" },
+  {
+    "fullname": "CS 4290",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  {
+    "fullname": "CS 4245",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        {
+          "type": "or",
+          "courses": ["MATH 2605", "MATH 2401", "MATH 2411", "MATH 24X1"]
+        },
+        { "type": "or", "courses": ["CS 1332", "CS 1372"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4440",
+    "prerequisites": { "type": "and", "courses": ["CS 4400"] }
+  },
+  {
+    "fullname": "CS 4400",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1371"]
+    }
+  },
+  {
+    "fullname": "CS 4365",
+    "prerequisites": { "type": "or", "courses": ["CS 3210", "CS 4400"] }
+  },
+  {
+    "fullname": "CS 4260",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        {
+          "type": "or",
+          "courses": [
+            "MATH 3215",
+            "MATH 3225",
+            "MATH 3235",
+            "MATH 3770",
+            "ISYE 3770",
+            "CEE 3770",
+            "ISYE 2028",
+            "ISYE 3030",
+            "MATH 3670"
+          ]
+        },
+        "CS 2200"
+      ]
+    }
+  },
+  { "fullname": "CS 4263" },
+  {
+    "fullname": "CS 4233",
+    "prerequisites": { "type": "and", "courses": ["CS 3210"] }
+  },
+  {
+    "fullname": "CS 4262",
+    "prerequisites": { "type": "and", "courses": ["CS 3251"] }
+  },
+  {
+    "fullname": "CS 4237",
+    "prerequisites": { "type": "and", "courses": ["CS 3251"] }
+  },
+  { "fullname": "CS 4220R" },
+  {
+    "fullname": "CS 4005",
+    "prerequisites": { "type": "and", "courses": ["CS 2316"] }
+  },
+  { "fullname": "CS 4052" },
+  {
+    "fullname": "CS 4057",
+    "prerequisites": { "type": "and", "courses": ["MGT 2200"] }
+  },
+  {
+    "fullname": "CS 4220",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  {
+    "fullname": "CS 4476",
+    "prerequisites": {
+      "type": "or",
+      "courses": [
+        {
+          "type": "or",
+          "courses": [
+            "MATH 2605",
+            "MATH 2401",
+            "MATH 24X1",
+            "MATH 2411",
+            "MATH 2550",
+            "MATH 2551",
+            "MATH 2561",
+            "MATH 2X51"
+          ]
+        },
+        {
+          "type": "or",
+          "courses": ["MATH 1553", "MATH 1X54", "MATH 1554", "MATH 1564"]
+        },
+        "(   (",
+        "CS 2110",
+        "CS 2261"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 4261",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  {
+    "fullname": "CS 4251",
+    "prerequisites": { "type": "and", "courses": ["CS 3251"] }
+  },
+  { "fullname": "CS 4003" },
+  {
+    "fullname": "CS 4240",
+    "prerequisites": { "type": "and", "courses": ["CS 2340"] }
+  },
+  { "fullname": "CS 3873" },
+  { "fullname": "CS 4002" },
+  { "fullname": "CS 3804" },
+  { "fullname": "CS 3805" },
+  { "fullname": "CS 3XXX" },
+  { "fullname": "CS 3802" },
+  { "fullname": "CS 3801" },
+  {
+    "fullname": "CS 4238",
+    "prerequisites": { "type": "and", "courses": ["CS 3210"] }
+  },
+  { "fullname": "CS 3743" },
+  { "fullname": "CS 3750" },
+  {
+    "fullname": "CS 4235",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  { "fullname": "CS 3651R" },
+  {
+    "fullname": "CS 4239",
+    "prerequisites": { "type": "or", "courses": ["CS 4235", "CS 4725"] }
+  },
+  { "fullname": "CS 3790" },
+  { "fullname": "CS 3803" },
+  {
+    "fullname": "CS 3300",
+    "prerequisites": { "type": "and", "courses": ["CS 2340"] }
+  },
+  { "fullname": "CS 4001" },
+  {
+    "fullname": "CS 3240",
+    "prerequisites": { "type": "and", "courses": ["CS 2340"] }
+  },
+  { "fullname": "CS 4010" },
+  {
+    "fullname": "CS 3630",
+    "prerequisites": { "type": "and", "courses": ["CS 1332"] }
+  },
+  { "fullname": "CS 3751" },
+  {
+    "fullname": "CS 3651",
+    "prerequisites": { "type": "and", "courses": ["ECE 2031"] }
+  },
+  { "fullname": "CS 3744" },
+  {
+    "fullname": "CS 3511",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 2050", "CS 2051", "MATH 2106"] },
+        { "type": "or", "courses": ["CS 1332", "MATH 3012", "MATH 3022"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 3510",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 2050", "CS 2051", "MATH 2106"] },
+        { "type": "or", "courses": ["CS 1332", "MATH 3012", "MATH 3022"] }
+      ]
+    }
+  },
+  {
+    "fullname": "CS 2335",
+    "prerequisites": { "type": "and", "courses": ["CS 1332"] }
+  },
+  {
+    "fullname": "CS 4210",
+    "prerequisites": { "type": "and", "courses": ["CS 3210"] }
+  },
+  {
+    "fullname": "CS 3600",
+    "prerequisites": { "type": "and", "courses": ["CS 1332"] }
+  },
+  {
+    "fullname": "CS 3312",
+    "prerequisites": { "type": "and", "courses": ["CS 2340", "LMC 3432"] }
+  },
+  {
+    "fullname": "CS 3251",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 2200", "ECE 3057", "ECE 3058"]
+    }
+  },
+  { "fullname": "CS 1XXX" },
+  { "fullname": "CS 1805" },
+  { "fullname": "CS 1802" },
+  { "fullname": "CS 1803" },
+  { "fullname": "CS 1804" },
+  {
+    "fullname": "CS 3311",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        "CS 2340",
+        {
+          "type": "or",
+          "courses": [
+            "CS 3001",
+            "CS 4001",
+            "CS 4002",
+            "CS 4003",
+            "CS 4726",
+            "SLS 3110"
+          ]
+        }
+      ]
+    }
+  },
+  { "fullname": "CS 1801" },
+  {
+    "fullname": "CS 1372",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1171", "CS 1371", "CS 1301"]
+    }
+  },
+  { "fullname": "CS 2316R" },
+  { "fullname": "CS 2051" },
+  {
+    "fullname": "CS 2261",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  {
+    "fullname": "CS 3451",
+    "prerequisites": {
+      "type": "or",
+      "courses": [
+        {
+          "type": "or",
+          "courses": [
+            "MATH 2605",
+            "MATH 2401",
+            "MATH 2411",
+            "MATH 24X1",
+            "MATH 2551",
+            "MATH 2550",
+            "MATH 2561",
+            "MATH 2X51"
+          ]
+        },
+        "(   (",
+        "CS 2110",
+        "CS 2261"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 2316",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1371", "CS 1301", "CS 1315"]
+    }
+  },
+  { "fullname": "CS 2050" },
+  {
+    "fullname": "CS 3220",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        { "type": "or", "courses": ["CS 2200", "ECE 3057", "ECE 3058"] },
+        "ECE 2031"
+      ]
+    }
+  },
+  { "fullname": "CS 1371" },
+  { "fullname": "CS 1371R" },
+  {
+    "fullname": "CS 1332",
+    "prerequisites": { "type": "or", "courses": ["CS 1322", "CS 1331"] }
+  },
+  {
+    "fullname": "CS 1171",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 15XX", "CS 13X1", "CS 1315"]
+    }
+  },
+  { "fullname": "CS 1332R" },
+  { "fullname": "CS 2050R" },
+  { "fullname": "CS 1315R" },
+  { "fullname": "CS 1331R" },
+  {
+    "fullname": "CS 1331",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1321", "CS 1371"]
+    }
+  },
+  { "fullname": "CS 1315" },
+  {
+    "fullname": "CS 1316",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1371"]
+    }
+  },
+  {
+    "fullname": "CS 2110",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  { "fullname": "CS 1301R" },
+  { "fullname": "CS 1301" },
+  {
+    "fullname": "CS 2340",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1331", "CS 1372", "CS 1316"]
+    }
+  },
+  {
+    "fullname": "CS 2200",
+    "prerequisites": {
+      "type": "or",
+      "courses": [
+        "CS 2110",
+        { "type": "and", "courses": ["ECE 2020", "ECE 2035"] }
+      ]
+    }
+  }
+]
