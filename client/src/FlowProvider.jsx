@@ -4,9 +4,11 @@ import React, { createContext, useContext } from "react";
 const FlowContext = createContext();
 
 // Context provider component
-export const FlowProvider = ({ children, addNode }) => {
+export const FlowProvider = ({ children, createPostCourse }) => {
   return (
-    <FlowContext.Provider value={{ addNode }}>{children}</FlowContext.Provider>
+    <FlowContext.Provider value={{ createPostCourse }}>
+      {children}
+    </FlowContext.Provider>
   );
 };
 
