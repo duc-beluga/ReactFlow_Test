@@ -3,13 +3,13 @@ import { useFlow } from "./FlowProvider";
 export default function CustomNode({ data }) {
   const { course, postCourses } = data;
 
-  const { addNode } = useFlow();
+  const { createPostCourse } = useFlow();
   const nodeId = useNodeId();
 
   const handleCourseSelected = (event) => {
     const selectedCourse = event.target.value;
 
-    addNode(nodeId, selectedCourse);
+    createPostCourse(nodeId, selectedCourse);
   };
 
   return (

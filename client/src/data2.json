@@ -1,0 +1,49 @@
+[
+  {
+    "fullname": "CS 4455",
+    "prerequisites": { "type": "and", "courses": ["CS 3451"] }
+  },
+  {
+    "fullname": "CS 3451",
+    "prerequisites": {
+      "type": "and",
+      "courses": [
+        {
+          "type": "or",
+          "courses": [
+            "MATH 2605",
+            "MATH 2401",
+            "MATH 2411",
+            "MATH 24X1",
+            "MATH 2551",
+            "MATH 2550",
+            "MATH 2561",
+            "MATH 2X51"
+          ]
+        },
+        {
+          "type": "or",
+          "courses": ["CS 2110", "CS 2261"]
+        },
+        "CS 1332",
+        "CS 2340"
+      ]
+    }
+  },
+  {
+    "fullname": "CS 2110",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  {
+    "fullname": "CS 2261",
+    "prerequisites": { "type": "and", "courses": ["CS 1331"] }
+  },
+  {
+    "fullname": "CS 1331",
+    "prerequisites": {
+      "type": "or",
+      "courses": ["CS 1301", "CS 1315", "CS 1321", "CS 1371"]
+    }
+  },
+  { "fullname": "CS 1301" }
+]

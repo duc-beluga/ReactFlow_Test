@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import ReactFlow, {
   MiniMap,
   Controls,
@@ -13,72 +13,40 @@ import { FlowProvider } from "./FlowProvider";
 import coursesArray from "./data.json";
 import "reactflow/dist/style.css";
 
-const initialNodes = [
-  { name: "CS 1331", postCoursesList: ["CS 1332", "CS 2340", "CS 2110"] },
-];
-
-const coursesObj = coursesArray.reduce((acc, course) => {
+const postCourseDict = coursesArray.reduce((acc, course) => {
   acc[course.name] = course.postCoursesList;
   return acc;
 }, {});
 
-const formatNodes = (nodes) => {
-  let posX = 50;
-  let posY = 50;
-  const gapX = 50;
-  const gapY = 50;
-  let idNum = 1;
-  let updatedNodes = [];
-  for (let i = 0; i < nodes.length; i++) {
-    let newCourse = {
-      id: `${idNum}`,
-      type: "customNode",
-      position: { x: posX, y: posY },
-      data: {
-        course: nodes[i].name,
-        postCourses: nodes[i].postCoursesList,
-      },
-    };
-    idNum += 1;
-    posX += gapX;
-    posY += gapY;
-    updatedNodes.push(newCourse);
-  }
-  return updatedNodes;
-};
-
-const formatEdges = (edges) => {
-  let updatedEdges = [];
-  for (let i = 0; i < edges.length; i++) {
-    let newEdge = {
-      id: `${edges[i][0]}-${edges[i][1]}`,
-      source: `${edges[i][0]}`,
-      target: `${edges[i][1]}`,
-    };
-    updatedEdges.push(newEdge);
-  }
-  return updatedEdges;
-};
-
 const nodeTypes = { customNode: CustomNode };
 
 export default function App() {
-  const [nodes, setNodes, onNodesChange] = useNodesState(
-    formatNodes(initialNodes)
-  );
-  const [edges, setEdges, onEdgesChange] = useEdgesState(formatEdges([]));
+  const [nodes, setNodes, onNodesChange] = useNodesState([]);
+  const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 
-  const addNode = useCallback((nodeId, courseName) => {
+  useEffect(() => {
+    createPostCourse(null, "CS 1331");
+  }, []);
+
+  const createPostCourse = useCallback((prevCourseId, curCourse) => {
     const newNodeId = `${nodes.length + 1}`;
-    const pcList = coursesObj[courseName] ? coursesObj[courseName] : [];
+    const postCoursesList = postCourseDict[curCourse]
+      ? postCourseDict[curCourse]
+      : [];
+    const prevCourseNode = prevCourseId
+      ? nodes.find((node) => node.id === prevCourseId)
+      : null;
+    const { x: preX, y: preY } = prevCourseNode
+      ? prevCourseNode.position
+      : { x: 50, y: 50 };
     const newNode = {
       id: newNodeId,
       type: "customNode",
       position: {
-        x: Math.random() * (window.innerWidth - 15),
-        y: Math.random() * (window.innerHeight - 15),
+        x: preX + 100,
+        y: preY + 150,
       },
-      data: { course: courseName, postCourses: pcList },
+      data: { course: curCourse, postCourses: postCoursesList },
     };
 
     setNodes((nodes) => {
@@ -88,7 +56,11 @@ export default function App() {
     setEdges((edges) => {
       return [
         ...edges,
-        { id: `${nodeId}-${newNodeId}`, source: nodeId, target: newNodeId },
+        {
+          id: `${prevCourseId}-${newNodeId}`,
+          source: prevCourseId,
+          target: newNodeId,
+        },
       ];
     });
   });
@@ -99,7 +71,7 @@ export default function App() {
   );
 
   return (
-    <FlowProvider addNode={addNode}>
+    <FlowProvider createPostCourse={createPostCourse}>
       <div style={{ width: "100vw", height: "100vh" }}>
         <ReactFlow
           nodes={nodes}
